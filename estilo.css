@@ -1,0 +1,797 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(images/bg.svg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 80px 0 0 0;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: #ffb408;
+    font-size: 40px;
+    font-weight: 800;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #dcdde2;
+    display: block;
+    font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+    color: #ffb408;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content{
+    display: flex;
+}
+.header-txt{
+    width: 50%;
+    margin-bottom: 100px;
+}
+.header-txt h1{
+    font-size: 90px;
+    color: #ffb408;
+    line-height: 85px;
+    margin-bottom: 10px;
+    margin-right: 280px;
+    
+}
+.header-txt span{
+    font-size: 90px;
+    margin-right: 280px;
+}
+.header-txt p{
+    font-size: 16px;
+    color: #c4c4c4ce;
+    margin-bottom: 15px;
+}
+.header-img{
+    width: 30%;
+    text-align: center;
+}
+.header-img img{
+    width: 300px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 13px 20px;
+    color: #ffb408;
+    border: 1px solid #ffb408;
+    border-radius: 15px;
+    margin-right: 30px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+.btn-1:hover{
+    color: #dcdde2;
+    background-color: #ffb408;  
+}
+.menu-pl{
+    padding: 0 0 100px 0;
+}
+h2{
+    font-size: 50px;
+    color: #292923;
+    margin-bottom: 40px;
+}
+span{
+    color: #ffb408;
+}
+.general-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 35px;
+}
+.general-txt{
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
+    padding-bottom: 35px;
+}
+.general-txt img{
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 250px;
+}
+
+.general-txt h3{
+    font-size: 18px;
+    color: #292923;
+    padding: 25px 25px 10px 25px;
+
+}
+.general-txt p{
+    font-size: 16px;
+    color: #292923;
+    padding: 0 25px 20px 25px;
+}
+.precio{
+    padding: 0 25px 10px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.precio{
+    color: #ffb408;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-2{
+    display: inline-block;
+    border: 1px solid #ffb408;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 7px 15px;
+    color: #ffb408;
+}
+.btn-2:hover{
+background-color: #ffb408;
+color: #dcdde2;
+cursor: pointer;
+}
+.acercade{
+    padding: 100px 0;
+    margin-bottom: 100px;
+    background-color: #292933;
+}
+.acercade-txt{
+    width: 50%;
+}
+.acercade-content{
+    display: flex;
+}
+.acercade-txt h2{
+    color: #fbfcff;
+}
+.acercade-txt p{
+    color: #c4c4c4ce;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.hambuger{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 80px;
+}
+.hambuger span{
+    font-size: 80px;
+    font-weight: 800;
+}
+.acercade.img{
+    width: 50%;
+    text-align: right;
+}
+.footer{
+    background-color: #292933;
+    padding: 50px 0;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+.link h3{
+    color: #fbfcff;
+    text-transform: uppercase;
+}
+.link a{
+    color: #ffb408;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+.link a:hover{
+    color: #fbfcff;
+}
+.atencion{
+    height:900px;
+    width: 100%;
+     
+}
+.lft{
+    width: 35%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+   border: 4PX solid blanchedalmond;
+
+    
+}
+.rgt{
+    width: 60%;
+    height: 900px;
+    display: flex;
+    position: relative;
+    left: 39%;
+    bottom: 400px;
+ border: 4PX solid blanchedalmond;
+
+    
+}
+.lft p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fbfcff;
+}
+textarea[name="control5"]{
+    vertical-align:top;
+}
+.rgt p{
+    text-align: right;
+    font-size: 20px;
+    position: relative;
+    right: 50px;
+    top: 30px;
+    color: #fbfcff;
+}
+.rgt a{
+    position: relative;
+    left: 310px;
+    top: 20px;
+}
+.rgt h2{
+    color:#ffb408;
+    position: relative;
+    left: 205px;
+}
+.rgt h3{
+    color: #fbfcff;
+    position: relative;
+    left: 100px;
+}
+.lft h1{
+    color: #ffb408;
+}
+.ima1{
+    height: 150px;
+    width: 96%;
+
+    position: relative;
+    top: 40px;
+    left: 9px;
+}
+.ima1 img{
+    height: 80px;
+    width: 100px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.ima2{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 510px;
+    right: 150px;
+}
+.ima2 img{
+    border-radius: 15px;
+    height: 350px;
+    width: 500px;
+
+}
+.ima3{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 510px;
+    right: 850px;
+    
+}
+.ima3 img{
+  border-radius: 15px;
+    height: 350px;
+    width: 500px;
+}
+.arriba{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 200px;
+    
+}
+.arriba h1{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 60px;
+    color: white;
+}
+.jugos{
+    background-color: #ffb408;
+    width: 430px;
+    height: 850px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.naranja img{
+    height: 90px;
+    width: 100px;
+    margin-left: 8px;
+    margin-top: 38px;
+    display: block;
+}
+.naranja{
+    display: inline-block;
+    margin-left: 21px;
+}
+.naranja li{
+    display: block;
+    margin-left: 5px;
+}
+.piña img{
+    height: 90px;
+    width: 100px;
+    
+}
+.piña{
+display: inline-block;
+margin-left: 16px;
+}
+.toron img{
+    height: 90px;
+    width: 100px;
+}
+.toron{
+    margin-left: 20px;
+    display: inline-block;
+}
+.mango img{
+    height: 90px;
+    width: 100px;
+    
+}
+.mango{
+    margin-left: 28px;
+    margin-top: 60px;
+    display: inline-block;
+}
+.arandano img{
+    height: 90px;
+    width: 100px;
+}
+.arandano{
+    margin-left: 30px;
+    display: inline-block;
+}
+.manzana img{
+    height: 90px;
+    width: 100px;
+}
+.manzana{
+    display: inline-block;
+    margin-left: 30px;
+}
+.mandarina img{
+    height: 90px;
+    width: 100px;
+}
+.mandarina{
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.zanahoria img{
+    height: 90px;
+    width: 100px;
+}
+.zanahoria{
+    display: inline-block;
+    margin-left: 20px;
+}
+.subt p{
+    text-align: center;
+    font-size: 25px;
+}
+.subt{
+    background-color: #f71a1aa8;
+    height: 30px;
+    border-radius: 5px;
+}
+.jverdes{
+    background-color: #ffb408;
+    width: 430px;
+    height: 400px;
+    margin-left: 20px;
+    margin-bottom: 400px;
+    border-radius: 5px;
+}
+.jverdes p{
+    font-size: 25px;
+    text-align: center;
+    
+}
+.one img{
+height: 90px;
+width: 100px;
+}
+.one{
+    margin-left: 20px;
+    display: inline-block;
+}
+.two img{
+    height: 90px;
+    width: 100px;
+}
+.two{
+    margin-left: 20px;
+    display: inline-block;
+}
+.three img{
+    height: 90px;
+    width: 100px;
+}
+.three{
+    margin-left: 20px;
+    display: inline-block;
+}
+.four img{
+    height: 90px;
+    width: 100px;
+}
+.four{
+margin-left: 20px;
+display: inline-block;
+}
+ .awafresca{
+    background-color: #ffb408;
+    width: 430px;
+    height: 700px;
+    margin-left: 470px;
+    margin-top: 800px;
+    position: absolute;
+    border-radius: 5px;
+ }   
+ .tam img{
+    height: 90px;
+    width: 100px;
+    margin-left: 8px;
+    margin-top: 38px;
+    display: block;
+}
+.tam{
+    display: inline-block;
+    margin-left: 21px;
+}
+.tam li{
+    display: block;
+    margin-left: 5px;
+}
+.piña img{
+    height: 90px;
+    width: 100px;
+    
+}
+.piña{
+display: inline-block;
+margin-left: 16px;
+}
+.frutas img{
+    height: 90px;
+    width: 100px;
+}
+.frutas {
+    margin-left: 20px;
+    display: inline-block;
+}
+.mango img{
+    height: 90px;
+    width: 100px;
+    
+}
+.mango{
+    margin-left: 28px;
+    margin-top: 60px;
+    display: inline-block;
+}
+.avena img{
+    height: 90px;
+    width: 100px;
+}
+.avena {
+    margin-left: 30px;
+    display: inline-block;
+}
+.limon img{
+    height: 90px;
+    width: 100px;
+}
+.limon{
+    display: inline-block;
+    margin-left: 30px;
+}
+.jamaica img{
+    height: 90px;
+    width: 100px;
+}
+.jamaica{
+    margin-left: 40px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.sandia img{
+    height: 90px;
+    width: 100px;
+}
+.sandia{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.bbdastradicion{
+    height: 850px;
+    width: 440px;
+    background-color: #ffb408;
+    margin-left: 20px;
+    position: absolute;
+    margin-left: 920px;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+.btradicion p{
+    text-align: center;
+    font-size: 25px;
+}
+.imgs img{
+    height: 100px;
+    width: 100px;
+}
+.imgs{
+    margin-left: 50px;
+    display: inline-block;
+    margin-top: 50px;
+   
+}
+.pulque img{
+    height: 90px;
+    width: 100px;
+    margin-left: 8px;
+    margin-top: 38px;
+    display: block;
+}
+.pulque{
+    display: inline-block;
+    margin-left: 21px;
+}
+.pulque li{
+    display: block;
+    margin-left: 5px;
+}
+.carajillo img{
+    height: 90px;
+    width: 100px;
+    
+}
+.carajillo{
+display: inline-block;
+margin-left: 16px;
+}
+.mezcal img{
+    height: 90px;
+    width: 100px;
+}
+.mezcal{
+    margin-left: 20px;
+    display: inline-block;
+}
+.te img{
+    height: 90px;
+    width: 100px;
+    
+}
+.te{
+    margin-left: 28px;
+    margin-top: 60px;
+    display: inline-block;
+}
+.chocolate img{
+    height: 90px;
+    width: 100px;
+}
+.chocolate{
+    margin-left: 30px;
+    display: inline-block;
+}
+.paloma img{
+    height: 90px;
+    width: 100px;
+}
+.paloma{
+    display: inline-block;
+    margin-left: 30px;
+}
+.limoncello img{
+    height: 90px;
+    width: 100px;
+}
+.limoncello{
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.rompope img{
+    height: 90px;
+    width: 100px;
+}
+.rompope{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.vino{
+    height: 300px;
+    width: 1500px;
+    background-color: #ffb408;
+    margin-top: 400px;
+}
+.vino p{
+text-align: center;
+font-size: 25px;
+background-color: crimson;
+}
+.vinobl img{
+    height: 150px;
+    width: 150px;
+}
+.vinobl{
+    display: inline-block;
+    margin-left: 80px;
+}
+.vinoti img{
+    height: 150px;
+    width: 150px;
+}
+.vinoti{
+    display: inline-block;
+    margin-left: 80px;
+}
+.vinoro img{
+    height: 150px;
+    width: 150px;
+}
+.vinoro{
+    margin-left: 80px;
+    display: inline-block;
+}
+.vinobls img{
+    height: 150px;
+    width: 150px;
+}
+.vinobls{
+    display: inline-block;
+    margin-left: 80px;
+}
+.vinotic img{
+    height: 150px;
+    width: 150px;
+}
+.vinotic{
+display: inline-block;
+    margin-left: 80px;
+}
+.vinorosc img{
+    height: 150px;
+    width: 150px;
+
+}
+.vinorosc{
+display: inline-block;
+    margin-left: 80px;
+    margin-top: 55px;
+}
+.title{
+    text-align: center;
+    color: #ffb408;
+}
+.title h1{
+    font-size: 90px;
+    color: #ffb408;
+    line-height: 85px;
+    margin-bottom: 10px;
+    margin-right: 280px;
+    margin-left: 400px;
+}
+.Rsrvcn{
+    height: 400px;
+    width: 490px;
+    left: 1100px;
+    bottom: 525px;
+position: relative;
+    text-align: center;
+background-color: rgb(245, 245, 220, 0.514);
+}
+.domi{
+    height: 340px;
+    width: 430px;
+    position: relative;
+    left: 60px;
+    top: 10px;
+    font-size: 30px;
+    text-align: left;
+}
+.domi p{
+   margin-top: 40px;
+}
+.Rsrvcn p{
+    font-size: 30px; 
+}
+.Pedidos{
+    height: 380px;
+    width: 500px;
+    position: relative;
+    left: 1100px;
+    bottom: 400px;
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(245, 245, 220, 0.514);
+
+}
+.Pedidos p{
+    margin-top: 70px;
+    font-size: 30px;
+}
+.bot{
+    height: 20px;
+    width: 30px;
+    position: relative;
+    left: 600px;
+    bottom: 350px;
+}
+.header-img{
+    height: 100%;
+    width: 100px;
+}
+.fondo img{
+    height: 1750px;
+    width: 1863px;
+    left:0px;
+    position: absolute;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+.bot a{
+  right: 400px;
+  position: relative;
+  top: 430px;
+}
+.moto img{
+    height: 200px;
+    width:200px;
+    right:200px;
+    top:150px;
+}
